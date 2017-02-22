@@ -16,7 +16,7 @@
                     'ordering': true,
                     'info': false,
                     'aoColumnDefs': [
-                        {'sClass': 'text-right', 'aTargets': [1,2,3,4]}
+                        {'sClass': 'text-right', 'aTargets': [1, 2, 3, 4]}
                     ]
                 });
             });
@@ -31,13 +31,51 @@
         <div id='container'>
             <div class='content'>
                 <section class='post'>
-                    <h1 class='upcase'>Graph Compression by BFS</h1>
+                    <h1 class='upcase'>
+                        Graph Compression by BFS
+                        <span class='subtitle'>
+                            <a href='javadoc/gc/index.html' target='_blank'>APIDOCS</a>
+                        </span>
+                    </h1>
 
-                    <p>
-                        I'll write something...
+                    <p class='text-justify'>
+                        The <i>Graph Compression by BFS</i> project helps you to compress your graphs/networks in an efficient way
+                        using just a simple BFS and some more complex tricks. You can use the compressed version directly to query
+                        and navigate your original graph, so it is possible to deal with huge networks in main memory. Overall it
+                        is suitable for the Web Graph since it is able to exploit all the redundacies tipical of this graph.
                     </p>
 
+                    <p class='text-justify'>
+                        You can download the original paper, wrote with Prof. Alberto Apostolico, from
+                        <a href='http://www.mdpi.com/1999-4893/2/3/1031' target='_blank'>MDPI</a>. Please use the following
+                        <code>BibTeX</code> entry if you would like to cite this software:
+                    </p>
+
+                    <pre>
+
+@Article{ad-gcbfs-09,
+    AUTHOR  = {Apostolico, Alberto and Drovandi, Guido},
+    TITLE   = {Graph Compression by BFS},
+    JOURNAL = {Algorithms},
+    VOLUME  = {2},
+    YEAR    = {2009},
+    NUMBER  = {3},
+    PAGES   = {1031--1044},
+    URL     = {http://www.mdpi.com/1999-4893/2/3/1031},
+    ISSN    = {1999-4893},
+    DOI     = {10.3390/a2031031}
+}
+                    </pre>
+
                     <hr>
+
+                    <p class='text-justify'>
+                        Here compression results on some datasets gathered by the
+                        <a href='http://law.di.unimi.it/datasets.php' target='_blank'>Laboratory for Web Algorithmics</a>.
+                        All these results are obtained using a compresison level of 1000 (option <code>-l 1000</code>).
+                    </p>
+                    
+                    <br>
 
                     <table id='gcresult' class='table table-striped table-bordered' cellspacing='0' width='100%'>
                         <thead>
@@ -61,80 +99,87 @@
                         <tbody>
                             <tr>
                                 <td>cnr-2000</td>
-                                <td>325.557</td>
-                                <td>3.216.152</td>
+                                <td>325557</td>
+                                <td>3216152</td>
                                 <td>1,887</td>
-                                <td>102.626</td>
+                                <td>102626</td>
                             </tr>
                             <tr>
                                 <td>indochina-2004</td>
-                                <td>7.414.866</td>
-                                <td>194.109.311</td>
+                                <td>7414866</td>
+                                <td>194109311</td>
                                 <td>0,961</td>
-                                <td>3.592.247</td>
+                                <td>3592247</td>
                             </tr>
                             <tr>
                                 <td>uk-2005</td>
-                                <td>39.459.925</td>
-                                <td>936.364.282</td>
+                                <td>39459925</td>
+                                <td>936364282</td>
                                 <td>1,420</td>
-                                <td>21.132.095</td>
+                                <td>21132095</td>
                             </tr>
                             <tr>
                                 <td>gsh-2015-host</td>
-                                <td>68.660.142</td>
-                                <td>1.802.747.600</td>
+                                <td>68660142</td>
+                                <td>1802747600</td>
                                 <td>7,545</td>
-                                <td>61.890.300</td>
+                                <td>61890300</td>
                             </tr>
                             <tr>
                                 <td>enwiki-2013</td>
-                                <td>4.206.785</td>
-                                <td>101.355.853</td>
+                                <td>4206785</td>
+                                <td>101355853</td>
                                 <td>16,153</td>
-                                <td>3.328.601</td>
+                                <td>3328601</td>
                             </tr>
                             <tr>
                                 <td>uk-2007-05@100000</td>
-                                <td>100.000</td>
-                                <td>3.050.615</td>
+                                <td>100000</td>
+                                <td>3050615</td>
                                 <td>1,537</td>
-                                <td>65.974</td>
+                                <td>65974</td>
                             </tr>
                             <tr>
                                 <td>uk-2007-05@1000000</td>
-                                <td>1.000.000</td>
-                                <td>41.247.159</td>
+                                <td>1000000</td>
+                                <td>41247159</td>
                                 <td>1,255</td>
-                                <td>453.477</td>
+                                <td>453477</td>
                             </tr>
                             <tr>
                                 <td>eu-2005</td>
-                                <td>862.664</td>
-                                <td>19.235.140</td>
+                                <td>862664</td>
+                                <td>19235140</td>
                                 <td>2,728</td>
-                                <td>536.727</td>
+                                <td>536727</td>
                             </tr>
                             <tr>
                                 <td>in-2004</td>
-                                <td>1.382.908</td>
-                                <td>16.917.053</td>
+                                <td>1382908</td>
+                                <td>16917053</td>
                                 <td>1,417</td>
-                                <td>358.820</td>
+                                <td>358820</td>
                             </tr>
                             <tr>
                                 <td>uk-2014-tpd</td>
-                                <td>1.766.010</td>
-                                <td>18.244.650</td>
+                                <td>1766010</td>
+                                <td>18244650</td>
                                 <td>11,751</td>
-                                <td>599.726</td>
+                                <td>599726</td>
                             </tr>
                             <tr>
                                 <td>uk-2002</td>
-                                <td>18.520.486</td>
-                                <td>298.113.762</td>
+                                <td>18520486</td>
+                                <td>298113762</td>
                                 <td>1,709</td>
-                                <td>13.487.624</td>
+                                <td>13487624</td>
+                            </tr>
+                            <tr>
+                                <td>arabic-2005</td>
+                                <td>22744080</td>
+                                <td>639999458</td>
+                                <td>1,449</td>
+                                <td>19644612</td>
                             </tr>
                         </tbody>
                     </table>

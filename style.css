@@ -63,6 +63,17 @@ section.post, section > p {
     text-transform: uppercase;
 }
 
+section.post h1 .subtitle {
+    color: #d0d0d0;
+    font-size: 10px;
+    line-height: 12px;
+    display: block;
+}
+
+section.post h1 .subtitle a, section.post h1 .subtitle a:hover, section.post h1 .subtitle a:focus {
+    color: #d0d0d0;
+}
+
 section.post > * {
     padding: 0 60px;
 }
@@ -91,4 +102,8 @@ hr {
     border: 0;
     border-bottom: 1px dotted #CCC;
     margin: 25px 0;
+}
+
+pre {
+    margin: 0 60px;
 }
