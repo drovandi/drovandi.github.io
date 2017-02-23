@@ -107,3 +107,23 @@ hr {
 pre {
     margin: 0 60px;
 }
+
+.index {
+    width: 300px;
+    border-left: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    margin: 0 0 5px 20px;
+    padding: 0 0 10px 20px !important;
+}
+
+.index + p {
+    padding-top: 40px;
+}
+
+.index > a {
+    display: block;
+}
+
+pre.padding-small {
+    padding: 10px;
+}
